@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Enable</string>
+		</dict>
+		<dict>
+        	<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.wizage.gif2aniprefs</string>
+			<key>key</key>
+			<string>isEnabled</string>
+			<key>label</key>
+			<string>Enable Tweak</string>
+			<key>PostNotification</key>
+			<string>com.wizage.gif2aniprefs/ReloadPrefs</string>
+        </dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Change the respring logo</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>selectPhotos</string>
+			<key>cell</key>
+			<string>PSLinkCell</string>
+			<key>label</key>
+			<string>Select Gif for Respring</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Image transformation</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>defaults</key>
+			<string>com.wizages.gif2aniprefs</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>label</key>
+			<string>Image Transformation type:</string>
+			<key>key</key>
+			<string>imageTransformation</string>
+			<key>valuesDataSource</key>
+			<string>getTransformTypes</string>
+			<key>titlesDataSource</key>
+			<string>getTransformTypesTitle</string>
+			<key>PostNotification</key>
+			<string>com.wizages.gif2aniprefs/ReloadPrefs</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Change loop count (-1 is infinite)</string>
+		</dict>
+		<dict>
+        	<key>cell</key>
+			<string>PSSliderCell</string>
+			<key>default</key>
+			<real>-1</real>
+			<key>defaults</key>
+			<string>com.wizages.gif2aniprefs</string>
+			<key>key</key>
+			<string>customLoop</string>
+			<key>label</key>
+			<string>Loop count</string>
+			<key>showValue</key>
+			<true/>
+			<key>min</key>
+			<real>-1</real>
+			<key>max</key>
+			<real>10</real>
+			<key>PostNotification</key>
+			<string>com.wizages.gif2aniprefs/ReloadPrefs</string>
+        </dict>
+        <dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Change duration of gif (-1 is default duration)</string>
+		</dict>
+        <dict>
+        	<key>cell</key>
+			<string>PSSliderCell</string>
+			<key>default</key>
+			<real>-1</real>
+			<key>defaults</key>
+			<string>com.wizages.gif2aniprefs</string>
+			<key>key</key>
+			<string>customDuration</string>
+			<key>label</key>
+			<string>Duration of gif (sec)</string>
+			<key>showValue</key>
+			<true/>
+			<key>min</key>
+			<real>-1</real>
+			<key>max</key>
+			<real>60</real>
+			<key>PostNotification</key>
+			<string>com.wizages.gif2aniprefs/ReloadPrefs</string>
+        </dict>
+        <dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Change Background color</string>
+		</dict>
+		<dict>
+            <key>cell</key>
+            <string>PSTableCell</string>
+            <key>cellClass</key>
+            <string>HBColorPickerCell</string>
+            <key>defaults</key>
+            <string>com.wizages.gif2aniprefs</string>
+            <key>PostNotification</key>
+            <string>com.wizages.gif2aniprefs/ReloadPrefs</string>
+            <key>key</key>
+            <string>backgroundColor</string>
+            <key>label</key>
+            <string>Background Color</string>
+            <key>default</key>
+            <string>#000000</string>
+        </dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>respring</string>
+			<key>cell</key>
+			<string>PSLinkCell</string>
+			<key>label</key>
+			<string>Apply new gif</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>Gif2Ani</string>
+</dict>
+</plist>

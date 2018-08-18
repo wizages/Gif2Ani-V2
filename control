@@ -1,0 +1,11 @@
+Package: com.wizage.gif2ani2
+Name: Gif2Ani V2
+Depends: mobilesubstrate, ws.hbang.common, org.thebigboss.libcolorpicker, com.wizages.writeanywhere
+Conflicts: com.wizages.gif2ani
+Version: 2.0~beta1
+Architecture: iphoneos-arm
+Description: iOS Respring animations from any gif you want
+Maintainer: wizages <wizagesmax@gmail.com>
+Author: wizages <wizagesmax@gmail.com>
+Section: Tweaks
+Depiction: http://wizages.com/cydia/depictions/?dep=com.wizage.gif2ani2
